@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- *main-Entry point prints alpha in lowercase
- *except for q and e
+ *main-Entry point print alphabs except q,e
  *
  *Return:Always 0 (success)
  */
@@ -14,7 +13,6 @@ for (ltr = a ; ltr <= z ; ltr++)
 if (ltr != e && ltr != q)
 {
 putchar(ltr);
-
 }
 }
 putchar(n);
