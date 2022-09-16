@@ -1,8 +1,9 @@
+
 #include "main.h"
 /**
- *int add(int num1, num2);
- *"int add:adds two numbers num1 num2
- *num1,num2 parameters to be added
+ *add-description add two nums
+ *@num1:parameters to be added
+ *@num2:param1
  *Return:0 (success)
  */
 int add(int num1, int num2)
