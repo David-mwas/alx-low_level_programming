@@ -1,9 +1,10 @@
+
 #include "main.h"
 #include <stdio.h>
 /**
  *print_to_98-Entry point
  *description-prints numbers upto 98
- *parameter-n-integer parameter "int n"
+ *@n:integer parameter "int n"
  *int n-parameter
  *Return:always 0 success
  */
