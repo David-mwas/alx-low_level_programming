@@ -1,11 +1,12 @@
 #include <stdio.h>
-/**
+/*
+ * *
  *largest_number-returns largest number
  *
  *@a:1st param
  *@b:2nd param
  *@c:3rd param
- *@largest:largest
+ *@int:retuns integer
  *Return : 0 (success)
  */
 int largest_number(int a, int b, int c)
