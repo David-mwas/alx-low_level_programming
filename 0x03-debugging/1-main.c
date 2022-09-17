@@ -1,7 +1,8 @@
+
 #include <stdio.h>
 /**
  *main-causes an infinite loop
- *@void:void
+ *@int:void
  *
  *Return : 0 (success)
  */
@@ -16,7 +17,7 @@ i = 0;
  *Infinite loop-No increase of variable
  *putchar(i);
  *}
- */printf("Infinite loop avoided ! \\o/\n");
+ */printf("Infinite loop avoided! \\o/\n");
  return (0);
 
 }
