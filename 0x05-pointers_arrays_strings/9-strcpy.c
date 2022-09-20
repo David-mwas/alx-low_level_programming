@@ -7,7 +7,7 @@
  *
  *Return: a pointer to destination
  */
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
 int index = 0;
 while (src[index])
