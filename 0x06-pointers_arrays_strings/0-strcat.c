@@ -1,19 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * strcat - Concatenates the string pointed to by @src, including the terminating @dest.
- * @dest: A pointer to the string to be c.
- * @src: The source string to be appended to @dest.
- * Return: A pointer to the destination string @dest.
+ *strcat - reverse q string
+ *@dest: buffer tocopy string to
+ *@src: the source string tocopy
+ *
+ *Return: a pointer to destination
  */
 char *strcat(char *dest, const char *src)
 {
-int index = 0, dest_len = 0;
-
-while (dest[index++])
+int i = 0, dest_len = 0;
+while (dest[i++])
+{
 dest_len++;
-
-for (index = 0; src[index]; index++)
-dest[dest_len++] = src[index];
-
+}
+for (i = 0 ; src[i] ; i++)
+{
+dest[dest_len++] = src[i];
+}
 return (dest);
 }
