@@ -14,7 +14,8 @@ int index = 0;
 
 while (str[index])
 {
-if (str[index] >= a && str[index] <= z)
+if (str[index] >= 'a' && str[index] <= 'z'
+)
 str[index] -= 32;
 
 index++;
