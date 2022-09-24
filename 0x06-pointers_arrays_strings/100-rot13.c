@@ -11,7 +11,7 @@ unsigned int num = n;
 
 if (n < 0)
 {
-_putchar(-);
+_putchar('-');
 num = -num;
 }
 
