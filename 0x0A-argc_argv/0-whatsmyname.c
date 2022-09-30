@@ -1,14 +1,17 @@
-
 #include <stdio.h>
+
 /**
- *main - receives args prints filename
- *@argc: shows no of arguments
- *@argv: receives arg as array of strings
+ * main - Prints the program name, followed by a new line.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- *Return: success 0
+ * Return: Always o.
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 printf("%s\n", argv[0]);
+
 return (0);
 }
+Footer
+
