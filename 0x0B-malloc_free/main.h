@@ -1,4 +1,5 @@
 
+
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -23,4 +24,5 @@ void free_grid(int **grid, int height);
 /*Function that concatenates all the arguments of your program*/
 char *argstostr(int ac, char **av);
 
-#endif /* MAIN_H
+#endif /* MAIN_H */
+
