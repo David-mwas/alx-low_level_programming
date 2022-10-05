@@ -17,11 +17,8 @@ for (i = 0; s[i]; i++)
 {
 if (s[i] == ' ')
 {
-<<<<<<< HEAD
 if (s[i + 1] != ' ' && s[i + 1] != 0)
-=======
 if (s[i + 1] != ' ' && s[i + 1] != '\0')
->>>>>>> bd86fa0f7ffa5e591eb1e59aacc4a0ec05d10770
 n++;
 }
 else if (i == 0)
@@ -54,11 +51,8 @@ w[n - 1] = NULL;
 i = 0;
 while (str[i])
 {
-<<<<<<< HEAD
 if (str[i] != ' ' && (i == 0 || str[i - 1] ==  ))
-=======
 if (str[i] != 'n' && (i == 0 || str[i - 1] == ' '))
->>>>>>> bd86fa0f7ffa5e591eb1e59aacc4a0ec05d10770
 {
 for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 ;
