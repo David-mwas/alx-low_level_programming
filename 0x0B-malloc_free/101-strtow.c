@@ -17,7 +17,11 @@ for (i = 0; s[i]; i++)
 {
 if (s[i] == ' ')
 {
+<<<<<<< HEAD
 if (s[i + 1] != ' ' && s[i + 1] != 0)
+=======
+if (s[i + 1] != ' ' && s[i + 1] != '\0')
+>>>>>>> bd86fa0f7ffa5e591eb1e59aacc4a0ec05d10770
 n++;
 }
 else if (i == 0)
@@ -38,24 +42,28 @@ char **strtow(char *str)
 int i, j, k, l, n = 0, wc = 0;
 char **w;
 
-if (str == NULL || *str == 0)
+if (str == NULL || *str == '\0')
 return (NULL);
 n = wrdcnt(str);
 if (n == 1)
 return (NULL);
-w = (char **)malloc(n * sizeof(char *));
+w = (char **)malloc(n *sizeof(char *));
 if (w == NULL)
 return (NULL);
 w[n - 1] = NULL;
 i = 0;
 while (str[i])
 {
+<<<<<<< HEAD
 if (str[i] != ' ' && (i == 0 || str[i - 1] ==  ))
+=======
+if (str[i] != 'n' && (i == 0 || str[i - 1] == ' '))
+>>>>>>> bd86fa0f7ffa5e591eb1e59aacc4a0ec05d10770
 {
 for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 ;
 j++;
-w[wc] = (char *)malloc(j * sizeof(char));
+w[wc] = (char *)malloc(j *sizeof(char));
 j--;
 if (w[wc] == NULL)
 {
@@ -67,7 +75,7 @@ return (NULL);
 }
 for (l = 0; l < j; l++)
 w[wc][l] = str[i + l];
-w[wc][l] = 0;
+w[wc][l] = '\0';
 wc++;
 i += j;
 }
