@@ -17,7 +17,7 @@ list_t *new, *temp;
 new = malloc(sizeof(list_t));
 if (new == NULL)
 {
- (NULL);
+return (NULL);
 }
 new->str = strdup(str);
 new->len = strlen(str);
@@ -26,13 +26,15 @@ new->next = NULL;
 temp = *head;
 if (*head == NULL)
 {
-= new;
+*head = new;
 }
 else
 {
-(temp->next)
-= temp->next;
-ext = new;
+while (temp->next)
+{
+temp = temp->next;
+}
+temp->next = new;
 }
 
 return (new);
